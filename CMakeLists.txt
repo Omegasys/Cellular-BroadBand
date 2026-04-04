@@ -20,16 +20,26 @@ include_directories(
 
 # Define the source files of the project
 set(SOURCE_FILES
-    src/lte_modem.c
-    src/encryption.c
-    src/packet_handler.c
-    src/authentication.c
-    src/logging.c
-    src/error_handling.c
-    src/test_encryption.c
-    src/test_authentication.c
-    src/test_packet_handler.c
-    src/test_lte_modem.c
+    commands/modem_commands.c
+    modem/ID/ID.conf
+    modem/ID/ad_id_rotator.c
+    modem/ID/imsi_rotator.c
+    modem/ID/inzi_rotator.c
+    modem/network/packet_handler.c
+    modem/network/packet_handler.h
+    modem/security/authentication.c
+    modem/security/authentication.h
+    modem/security/encryption.c
+    modem/security/encryption.h
+    modem/lte_modem.c
+    modem/lte_modem.h
+    utils/error_handling.c
+    utils/error_handling.h
+    utils/logging.c
+    utils/logging.h
+    event_logger.c
+    main.c
+    modem_access_restrictions.c
 )
 
 # If you have additional test files or documentation, include them here
