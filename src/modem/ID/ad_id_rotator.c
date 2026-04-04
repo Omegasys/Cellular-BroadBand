@@ -8,7 +8,7 @@
 
 // Function to read the AD-ID and rotation interval from the .comf file
 int read_config(char *ad_id, int *rotate_interval) {
-    FILE *config_file = fopen(CONFIG_FILE_PATH, "r");
+    FILE *config_file = fopen(/src/modem/ID/ID.conf, "r");
     if (config_file == NULL) {
         perror("Error opening config file");
         return -1;
